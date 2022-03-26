@@ -1,0 +1,31 @@
+Name: Gurtaj Khabra
+CMPUT 274 Fa21
+Assignment 1: OOClassifier
+
+This assignment was completed for the fall term in my 2nd year at
+university. The primary focus was to understand and apply the concepts
+of object-oriented programming we had been learning throughout the semester.
+
+Included Files:
+	* ooclassifier.py
+	* README
+
+Reasonable Design Decisions:
+
+	For the list of stopwords I hard coded it in the remove_stops
+	method which is called by preprocess_words in training instance.
+
+	For preprocess_words in training instance, I added 3 methods
+	under training instance for removing symbols, digits, and
+	stopwords. All of these are called by preprocess_words.
+
+	For target_top_n I did not use any other methods because
+	I felt that all the code belonged in that class.
+
+	For return_nfolds, I added both the training instances
+	and the lines to each training set object that was made
+	even though only training instances were explicitly stated.
+	I also did this for add_training_set.
+
+	For copy() I simply returned a deepcopy of 'self' which
+	represents the object of class TrainingSet().
